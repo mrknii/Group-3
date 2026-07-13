@@ -1,0 +1,97 @@
+income_group,year,gdp_per_capita_usd,health_exp_pct_gdp,health_exp_per_capita_usd,under5_mortality_per_1000
+High income,2000,17807.72,6.4,1149.0,11.45
+High income,2001,17647.39,6.51,1176.76,11.05
+High income,2002,18841.03,6.64,1301.2,10.68
+High income,2003,22173.24,6.76,1586.75,10.34
+High income,2004,25408.28,6.68,1811.7,10.0
+High income,2005,27620.29,6.71,1936.81,9.67
+High income,2006,30025.76,6.66,2043.4,9.34
+High income,2007,34321.89,6.81,2323.32,9.04
+High income,2008,37603.62,6.97,2591.57,8.76
+High income,2009,32587.64,7.42,2528.93,8.51
+High income,2010,33937.6,7.42,2592.04,8.28
+High income,2011,37841.76,7.32,2833.68,8.07
+High income,2012,36926.67,7.37,2759.66,7.86
+High income,2013,38073.1,7.39,2854.95,7.68
+High income,2014,38478.75,7.43,2923.41,7.51
+High income,2015,34017.6,7.61,2633.03,7.34
+High income,2016,34212.98,7.66,2691.71,7.17
+High income,2017,35964.97,7.63,2821.3,7.01
+High income,2018,38610.47,7.62,2994.27,6.85
+High income,2019,38128.37,7.75,2988.56,6.88
+High income,2020,35882.61,8.65,3168.59,6.58
+High income,2021,42157.07,8.52,3572.55,6.47
+High income,2022,43797.28,8.1,3424.19,6.39
+High income,2023,45605.51,8.01,3572.21,6.31
+Low income,2000,317.09,4.36,16.78,151.23
+Low income,2001,313.93,4.31,15.82,148.4
+Low income,2002,331.42,4.65,16.27,138.95
+Low income,2003,355.11,4.85,17.72,130.4
+Low income,2004,411.34,5.29,21.02,124.99
+Low income,2005,473.92,5.4,23.72,118.3
+Low income,2006,519.54,5.6,26.71,112.53
+Low income,2007,596.29,5.47,30.53,107.52
+Low income,2008,737.33,5.42,35.08,102.78
+Low income,2009,704.12,5.76,36.3,112.68
+Low income,2010,751.76,5.55,36.92,96.47
+Low income,2011,814.11,5.44,39.65,99.12
+Low income,2012,762.25,5.2,38.48,89.27
+Low income,2013,765.0,5.55,40.34,85.43
+Low income,2014,769.92,5.88,44.74,88.64
+Low income,2015,711.38,5.84,42.12,86.02
+Low income,2016,635.28,5.92,39.05,85.12
+Low income,2017,653.08,6.46,37.8,86.37
+Low income,2018,676.41,6.13,40.7,76.22
+Low income,2019,681.19,5.95,37.48,77.62
+Low income,2020,649.85,6.63,40.6,70.69
+Low income,2021,696.58,6.59,42.14,72.17
+Low income,2022,754.09,6.5,43.24,81.96
+Low income,2023,751.06,6.39,44.22,65.66
+Lower middle income,2000,904.05,4.52,46.58,89.8
+Lower middle income,2001,883.43,4.9,47.6,86.33
+Lower middle income,2002,870.71,5.0,48.16,82.73
+Lower middle income,2003,975.2,5.01,54.23,79.2
+Lower middle income,2004,1113.74,5.09,62.55,75.82
+Lower middle income,2005,1237.84,5.11,67.52,72.58
+Lower middle income,2006,1392.57,5.09,73.55,69.23
+Lower middle income,2007,1587.34,4.98,82.07,66.33
+Lower middle income,2008,1851.06,5.0,91.34,64.35
+Lower middle income,2009,1855.13,5.14,93.5,60.8
+Lower middle income,2010,2101.07,5.03,101.51,59.4
+Lower middle income,2011,2248.23,5.11,115.03,55.61
+Lower middle income,2012,2374.08,5.11,117.21,53.49
+Lower middle income,2013,2378.49,5.24,121.47,51.58
+Lower middle income,2014,2377.73,5.16,119.79,49.99
+Lower middle income,2015,2159.29,5.17,114.12,48.53
+Lower middle income,2016,2130.87,5.14,112.85,46.98
+Lower middle income,2017,2290.97,5.0,115.61,45.64
+Lower middle income,2018,2350.4,4.85,120.99,44.34
+Lower middle income,2019,2355.07,5.1,123.84,43.39
+Lower middle income,2020,2147.14,5.39,116.21,42.17
+Lower middle income,2021,2369.78,5.43,131.16,40.98
+Lower middle income,2022,2452.11,5.29,129.67,39.91
+Lower middle income,2023,2456.33,5.3,131.59,39.47
+Upper middle income,2000,2383.86,5.49,134.6,35.09
+Upper middle income,2001,2383.22,5.44,133.45,33.67
+Upper middle income,2002,2366.75,5.53,133.87,32.39
+Upper middle income,2003,2650.38,5.49,148.66,31.06
+Upper middle income,2004,3059.93,5.57,170.82,30.28
+Upper middle income,2005,3537.98,5.77,197.51,28.7
+Upper middle income,2006,4020.95,5.72,220.26,27.55
+Upper middle income,2007,4704.73,5.65,253.75,26.48
+Upper middle income,2008,5501.16,5.86,299.43,25.44
+Upper middle income,2009,4955.48,6.27,296.17,24.72
+Upper middle income,2010,5586.36,6.14,322.81,23.5
+Upper middle income,2011,6278.29,5.96,356.51,22.77
+Upper middle income,2012,6528.56,6.07,373.95,21.91
+Upper middle income,2013,6684.68,6.09,389.57,21.19
+Upper middle income,2014,6683.18,6.17,393.51,20.57
+Upper middle income,2015,6025.37,6.42,377.78,19.98
+Upper middle income,2016,5928.55,6.55,380.4,19.47
+Upper middle income,2017,6374.93,6.48,406.43,18.94
+Upper middle income,2018,6670.2,6.38,416.21,18.5
+Upper middle income,2019,6678.03,6.58,432.4,18.13
+Upper middle income,2020,5913.09,7.11,425.16,17.66
+Upper middle income,2021,6641.65,7.29,474.46,17.25
+Upper middle income,2022,7351.41,6.85,494.22,16.85
+Upper middle income,2023,7914.69,6.87,537.01,16.89

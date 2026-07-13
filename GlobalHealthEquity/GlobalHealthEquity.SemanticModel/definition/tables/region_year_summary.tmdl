@@ -1,0 +1,72 @@
+table region_year_summary
+	lineageTag: f45c081b-e677-4be2-aa68-ade64a1e7507
+
+	column region
+		dataType: string
+		lineageTag: 338cb05e-07ce-4d86-98c0-a7b5f8879fbb
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: a1888ea9-edd0-457f-9b78-2dd5beb07b04
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column gdp_per_capita_usd
+		dataType: double
+		lineageTag: d11c52da-7370-471d-a2ae-7e1cb2bc188d
+		summarizeBy: none
+		sourceColumn: gdp_per_capita_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column health_exp_pct_gdp
+		dataType: double
+		lineageTag: 22872fbc-cce0-400b-81f1-57a082241bf6
+		summarizeBy: none
+		sourceColumn: health_exp_pct_gdp
+
+		annotation SummarizationSetBy = Automatic
+
+	column health_exp_per_capita_usd
+		dataType: double
+		lineageTag: b789cffc-a28c-48ee-b8e3-ea4f7901f510
+		summarizeBy: none
+		sourceColumn: health_exp_per_capita_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column under5_mortality_per_1000
+		dataType: double
+		lineageTag: 57c13e1c-b8d4-4441-88c6-7205555d0075
+		summarizeBy: none
+		sourceColumn: under5_mortality_per_1000
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_countries
+		dataType: int64
+		formatString: 0
+		lineageTag: f9b9d497-e686-4309-adcf-ecb5cd1a1758
+		summarizeBy: none
+		sourceColumn: n_countries
+
+		annotation SummarizationSetBy = Automatic
+
+	partition region_year_summary = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataPath & "\region_year_summary.csv"), [Delimiter=",", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"region", type text}, {"year", Int64.Type}, {"gdp_per_capita_usd", type number}, {"health_exp_pct_gdp", type number}, {"health_exp_per_capita_usd", type number}, {"under5_mortality_per_1000", type number}, {"n_countries", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table

@@ -1,0 +1,104 @@
+table country_year_panel
+	lineageTag: d5a7d01f-2a14-41d4-913b-9d575726f472
+
+	measure 'Avg Mortality' = AVERAGE(country_year_panel[under5_mortality_per_1000])
+		formatString: 0.0
+		lineageTag: 5ef63d4e-e038-4f17-a304-c5f65ca802b7
+
+	measure 'Avg Health Spend Pct' = AVERAGE(country_year_panel[health_exp_pct_gdp])
+		formatString: 0.0
+		lineageTag: 146d9f74-7f39-44fe-9528-742228624397
+
+	measure 'Avg GDP per Capita' = AVERAGE(country_year_panel[gdp_per_capita_usd])
+		formatString: #,0
+		lineageTag: 63f0f6e7-02ae-41f9-986c-a9950a477abf
+
+	measure 'Countries' = DISTINCTCOUNT(country_year_panel[country])
+		formatString: #,0
+		lineageTag: 6ca93784-99c9-4b29-97a8-392faffd720d
+
+	column iso3c
+		dataType: string
+		lineageTag: 5ab57fa3-2999-46ce-b025-534f2dedcb51
+		summarizeBy: none
+		sourceColumn: iso3c
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		dataCategory: Country
+		lineageTag: 6551e7e6-a87d-4e7d-9fc3-3c77409b46ae
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: 6fb4802a-7241-4e8a-a5c0-8480712549e8
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column income_group
+		dataType: string
+		lineageTag: 5be0ec46-310c-42da-b3d9-5f0971f2edde
+		summarizeBy: none
+		sourceColumn: income_group
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: bd6f0a44-21a6-4c3a-9fdb-cb1150387e64
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column gdp_per_capita_usd
+		dataType: double
+		lineageTag: 9ad26efe-a7c7-4d4e-8cdd-8c62c7a6a974
+		summarizeBy: none
+		sourceColumn: gdp_per_capita_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column health_exp_pct_gdp
+		dataType: double
+		lineageTag: 16ba6da8-57c1-4238-967e-20059f514107
+		summarizeBy: none
+		sourceColumn: health_exp_pct_gdp
+
+		annotation SummarizationSetBy = Automatic
+
+	column health_exp_per_capita_usd
+		dataType: double
+		lineageTag: 7821b6a0-83cd-424c-9285-e78673d30176
+		summarizeBy: none
+		sourceColumn: health_exp_per_capita_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column under5_mortality_per_1000
+		dataType: double
+		lineageTag: b2513ce0-d5ed-425a-b729-de7b689e66bb
+		summarizeBy: none
+		sourceColumn: under5_mortality_per_1000
+
+		annotation SummarizationSetBy = Automatic
+
+	partition country_year_panel = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataPath & "\country_year_panel.csv"), [Delimiter=",", Columns=9, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"iso3c", type text}, {"country", type text}, {"region", type text}, {"income_group", type text}, {"year", Int64.Type}, {"gdp_per_capita_usd", type number}, {"health_exp_pct_gdp", type number}, {"health_exp_per_capita_usd", type number}, {"under5_mortality_per_1000", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table

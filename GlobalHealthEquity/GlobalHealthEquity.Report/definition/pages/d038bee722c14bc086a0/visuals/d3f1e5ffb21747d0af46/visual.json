@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "d3f1e5ffb21747d0af46",
+  "position": {
+    "x": 12,
+    "y": 12,
+    "z": 0,
+    "width": 770,
+    "height": 696
+  },
+  "visual": {
+    "visualType": "filledMap",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "country_latest"
+                    }
+                  },
+                  "Property": "country"
+                }
+              },
+              "queryRef": "country_latest.country",
+              "nativeQueryRef": "country"
+            }
+          ]
+        },
+        "Gradient": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "country_latest"
+                    }
+                  },
+                  "Property": "Avg Mortality 2023"
+                }
+              },
+              "queryRef": "country_latest.Avg Mortality 2023",
+              "nativeQueryRef": "Avg Mortality 2023"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

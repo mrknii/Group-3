@@ -1,0 +1,4 @@
+expression DataPath = "C:\Users\HP\OneDrive\Desktop\pharma\data\clean" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 9ed80975-ac58-49da-9561-8ada16cd7b17
+
+	annotation PBI_ResultType = Text

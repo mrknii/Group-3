@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "4d4121115618478e956c",
+  "position": {
+    "x": 794,
+    "y": 12,
+    "z": 1,
+    "width": 474,
+    "height": 696
+  },
+  "visual": {
+    "visualType": "columnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "country_latest"
+                    }
+                  },
+                  "Property": "Mortality Band"
+                }
+              },
+              "queryRef": "country_latest.Mortality Band",
+              "nativeQueryRef": "Mortality Band"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "country_latest"
+                    }
+                  },
+                  "Property": "Countries 2023"
+                }
+              },
+              "queryRef": "country_latest.Countries 2023",
+              "nativeQueryRef": "Countries 2023"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "country_latest"
+                  }
+                },
+                "Property": "Mortality Band"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

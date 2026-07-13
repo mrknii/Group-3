@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "20eb292d1752452f9fcd",
+  "position": {
+    "x": 12,
+    "y": 222,
+    "z": 5,
+    "width": 186,
+    "height": 240
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "country_year_panel"
+                    }
+                  },
+                  "Property": "region"
+                }
+              },
+              "queryRef": "country_year_panel.region",
+              "nativeQueryRef": "region"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "c1eaae5c41ac4db6bbbb",
+  "position": {
+    "x": 12,
+    "y": 12,
+    "z": 0,
+    "width": 1256,
+    "height": 64
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "log GDP vs mortality: r = -0.77 | health spend per capita: r = -0.76 | health spend % GDP: r = -0.22. Absolute per-capita health investment predicts child survival; budget share alone does not.",
+                    "textStyle": {
+                      "fontSize": "12pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

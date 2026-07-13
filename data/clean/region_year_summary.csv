@@ -1,0 +1,169 @@
+region,year,gdp_per_capita_usd,health_exp_pct_gdp,health_exp_per_capita_usd,under5_mortality_per_1000,n_countries
+East Asia & Pacific,2000,5817.4,6.05,353.59,41.4,30
+East Asia & Pacific,2001,5397.07,5.95,328.59,39.85,30
+East Asia & Pacific,2002,5597.73,5.81,343.2,38.46,30
+East Asia & Pacific,2003,6255.15,5.6,386.93,34.84,30
+East Asia & Pacific,2004,7198.63,5.66,441.21,33.76,30
+East Asia & Pacific,2005,7894.06,6.2,488.94,32.36,30
+East Asia & Pacific,2006,8413.71,6.23,509.8,31.26,30
+East Asia & Pacific,2007,9283.74,6.29,566.96,30.2,30
+East Asia & Pacific,2008,10091.46,6.53,619.24,30.24,30
+East Asia & Pacific,2009,9205.6,6.49,621.58,28.33,30
+East Asia & Pacific,2010,10741.69,6.37,721.59,27.14,30
+East Asia & Pacific,2011,12495.09,6.0,827.47,26.22,30
+East Asia & Pacific,2012,13166.45,6.11,873.91,25.34,30
+East Asia & Pacific,2013,13078.9,6.18,858.06,24.57,30
+East Asia & Pacific,2014,12966.72,6.23,880.5,23.84,30
+East Asia & Pacific,2015,11944.01,6.46,830.8,23.38,30
+East Asia & Pacific,2016,11995.36,6.58,881.58,22.62,30
+East Asia & Pacific,2017,12672.89,6.69,931.16,22.04,30
+East Asia & Pacific,2018,13450.76,6.63,967.29,21.53,30
+East Asia & Pacific,2019,13364.95,6.86,991.75,21.11,30
+East Asia & Pacific,2020,12751.32,7.13,1038.13,20.51,30
+East Asia & Pacific,2021,14578.92,7.46,1198.0,20.01,30
+East Asia & Pacific,2022,15185.13,7.73,1205.66,19.53,30
+East Asia & Pacific,2023,15019.35,7.69,1193.88,19.02,30
+Europe & Central Asia,2000,13721.08,6.39,972.78,17.99,52
+Europe & Central Asia,2001,13897.99,6.53,1007.84,16.95,52
+Europe & Central Asia,2002,15304.73,6.8,1150.12,15.95,52
+Europe & Central Asia,2003,18798.2,7.01,1450.01,15.0,52
+Europe & Central Asia,2004,21692.57,7.07,1684.81,14.09,52
+Europe & Central Asia,2005,23148.39,7.11,1793.63,13.25,52
+Europe & Central Asia,2006,25059.96,7.01,1888.76,12.45,52
+Europe & Central Asia,2007,29626.59,6.9,2180.69,11.73,52
+Europe & Central Asia,2008,31881.61,7.14,2464.78,11.06,52
+Europe & Central Asia,2009,27775.74,7.76,2372.17,10.46,52
+Europe & Central Asia,2010,27784.29,7.69,2361.77,9.93,52
+Europe & Central Asia,2011,30508.62,7.59,2534.08,9.45,52
+Europe & Central Asia,2012,28772.87,7.71,2399.2,9.02,52
+Europe & Central Asia,2013,30305.05,7.71,2503.74,8.66,52
+Europe & Central Asia,2014,30997.75,7.67,2550.31,8.34,52
+Europe & Central Asia,2015,27035.56,7.71,2216.38,8.06,52
+Europe & Central Asia,2016,27389.32,7.72,2249.51,7.78,52
+Europe & Central Asia,2017,28840.81,7.61,2357.56,7.54,52
+Europe & Central Asia,2018,31135.51,7.56,2535.56,7.32,52
+Europe & Central Asia,2019,30707.73,7.66,2511.18,7.12,52
+Europe & Central Asia,2020,29805.81,8.58,2672.2,6.96,52
+Europe & Central Asia,2021,34907.3,8.63,3052.13,6.81,52
+Europe & Central Asia,2022,35191.57,8.0,2912.87,6.69,52
+Europe & Central Asia,2023,37805.61,7.94,3098.43,6.64,52
+Latin America & Caribbean,2000,4814.18,5.45,262.43,28.61,35
+Latin America & Caribbean,2001,5223.44,5.47,263.07,27.6,35
+Latin America & Caribbean,2002,5074.48,5.6,253.07,26.67,35
+Latin America & Caribbean,2003,5203.38,5.61,263.88,25.81,35
+Latin America & Caribbean,2004,5677.97,5.58,285.24,25.03,35
+Latin America & Caribbean,2005,6395.74,5.67,320.86,24.3,35
+Latin America & Caribbean,2006,7243.64,5.66,356.73,23.62,35
+Latin America & Caribbean,2007,7992.48,5.82,404.48,22.97,35
+Latin America & Caribbean,2008,8826.88,5.94,457.4,22.38,35
+Latin America & Caribbean,2009,8145.97,6.29,461.72,21.81,35
+Latin America & Caribbean,2010,8889.25,6.23,504.83,22.98,35
+Latin America & Caribbean,2011,9608.69,6.27,552.89,20.79,35
+Latin America & Caribbean,2012,9949.04,6.23,578.08,20.3,35
+Latin America & Caribbean,2013,10128.82,6.25,607.03,19.85,35
+Latin America & Caribbean,2014,10325.21,6.33,618.91,19.42,35
+Latin America & Caribbean,2015,10173.68,6.52,624.45,19.01,35
+Latin America & Caribbean,2016,10139.88,6.57,626.07,18.77,35
+Latin America & Caribbean,2017,10620.57,6.53,671.49,18.34,35
+Latin America & Caribbean,2018,10841.09,6.49,659.55,17.95,35
+Latin America & Caribbean,2019,10843.29,6.59,664.77,17.91,35
+Latin America & Caribbean,2020,9075.0,7.32,647.76,17.26,35
+Latin America & Caribbean,2021,10407.81,7.38,700.7,16.92,35
+Latin America & Caribbean,2022,12020.72,6.85,744.73,16.6,35
+Latin America & Caribbean,2023,12988.17,6.57,777.47,16.26,35
+"Middle East, North Africa, Afghanistan & Pakistan",2000,7492.18,4.73,308.05,39.6,23
+"Middle East, North Africa, Afghanistan & Pakistan",2001,7086.22,4.99,320.28,38.13,23
+"Middle East, North Africa, Afghanistan & Pakistan",2002,7042.82,5.27,309.97,36.72,23
+"Middle East, North Africa, Afghanistan & Pakistan",2003,7833.36,5.09,337.98,35.36,23
+"Middle East, North Africa, Afghanistan & Pakistan",2004,9097.32,5.04,363.66,34.03,23
+"Middle East, North Africa, Afghanistan & Pakistan",2005,10843.12,4.88,394.39,32.76,23
+"Middle East, North Africa, Afghanistan & Pakistan",2006,12287.02,4.87,421.52,31.56,23
+"Middle East, North Africa, Afghanistan & Pakistan",2007,13329.38,4.83,463.97,30.39,23
+"Middle East, North Africa, Afghanistan & Pakistan",2008,15968.77,4.79,530.53,29.3,23
+"Middle East, North Africa, Afghanistan & Pakistan",2009,12846.56,5.25,545.81,28.28,23
+"Middle East, North Africa, Afghanistan & Pakistan",2010,14791.68,4.93,575.18,27.33,23
+"Middle East, North Africa, Afghanistan & Pakistan",2011,17373.11,5.01,636.06,26.74,23
+"Middle East, North Africa, Afghanistan & Pakistan",2012,18184.97,4.97,665.8,26.32,23
+"Middle East, North Africa, Afghanistan & Pakistan",2013,17887.13,5.11,711.15,25.63,23
+"Middle East, North Africa, Afghanistan & Pakistan",2014,17223.92,5.41,752.92,25.0,23
+"Middle East, North Africa, Afghanistan & Pakistan",2015,14139.51,5.74,722.02,24.33,23
+"Middle East, North Africa, Afghanistan & Pakistan",2016,13601.45,5.94,722.99,23.47,23
+"Middle East, North Africa, Afghanistan & Pakistan",2017,14413.97,5.85,749.47,22.93,23
+"Middle East, North Africa, Afghanistan & Pakistan",2018,15699.16,5.85,789.32,22.38,23
+"Middle East, North Africa, Afghanistan & Pakistan",2019,16093.8,6.04,812.17,21.47,23
+"Middle East, North Africa, Afghanistan & Pakistan",2020,13792.99,6.59,820.51,20.74,23
+"Middle East, North Africa, Afghanistan & Pakistan",2021,16664.54,6.39,884.96,20.17,23
+"Middle East, North Africa, Afghanistan & Pakistan",2022,18824.56,6.04,859.43,19.62,23
+"Middle East, North Africa, Afghanistan & Pakistan",2023,18783.44,6.1,885.29,21.24,23
+North America,2000,30300.49,10.37,3268.36,7.3,2
+North America,2001,30477.86,10.9,3471.78,7.25,2
+North America,2002,31126.9,11.43,3731.39,7.2,2
+North America,2003,33896.11,11.76,4133.55,7.15,2
+North America,2004,36935.1,11.81,4484.02,7.1,2
+North America,2005,40253.68,11.81,4848.54,7.05,2
+North America,2006,43403.42,12.02,5280.42,6.95,2
+North America,2007,46355.16,12.18,5670.8,6.85,2
+North America,2008,47640.21,12.4,5909.53,6.75,2
+North America,2009,44034.96,13.45,5985.33,6.65,2
+North America,2010,48101.73,13.45,6448.49,6.5,2
+North America,2011,51124.5,13.27,6707.88,6.4,2
+North America,2012,52189.27,13.33,6890.43,6.3,2
+North America,2013,52967.56,13.19,6936.14,6.2,2
+North America,2014,53057.14,13.21,7003.14,6.1,2
+North America,2015,50221.85,13.58,6929.88,6.05,2
+North America,2016,50145.37,13.87,7091.37,6.0,2
+North America,2017,52588.73,13.78,7358.69,5.9,2
+North America,2018,54707.44,13.72,7616.69,5.85,2
+North America,2019,55790.46,13.8,7824.55,5.85,2
+North America,2020,54001.6,15.77,8647.34,5.85,2
+North America,2021,62163.94,14.87,9295.77,5.85,2
+North America,2022,67252.81,13.8,9419.27,5.9,2
+North America,2023,68717.16,13.94,9829.92,5.95,2
+South Asia,2000,818.2,4.17,54.68,64.92,6
+South Asia,2001,955.92,4.47,57.15,61.12,6
+South Asia,2002,984.79,4.49,60.56,57.58,6
+South Asia,2003,1122.44,4.03,60.24,54.27,6
+South Asia,2004,1264.78,4.31,74.74,54.07,6
+South Asia,2005,1300.55,4.4,81.72,48.27,6
+South Asia,2006,1574.32,4.22,96.09,45.58,6
+South Asia,2007,1855.41,4.23,113.53,43.12,6
+South Asia,2008,2120.17,4.67,165.8,40.8,6
+South Asia,2009,2154.39,4.51,152.22,40.35,6
+South Asia,2010,2517.95,4.25,146.9,36.7,6
+South Asia,2011,2750.96,4.1,147.76,34.82,6
+South Asia,2012,2769.58,4.24,157.8,33.0,6
+South Asia,2013,2974.97,4.31,168.13,31.25,6
+South Asia,2014,3205.07,4.26,175.94,29.6,6
+South Asia,2015,3390.1,4.52,202.74,27.97,6
+South Asia,2016,3580.56,4.74,234.48,26.48,6
+South Asia,2017,3856.55,4.27,226.0,25.08,6
+South Asia,2018,4048.79,3.95,207.22,23.8,6
+South Asia,2019,4128.91,4.02,217.15,22.58,6
+South Asia,2020,3290.54,5.09,218.6,21.52,6
+South Asia,2021,3953.16,5.0,244.36,20.57,6
+South Asia,2022,4203.73,4.59,229.58,19.77,6
+South Asia,2023,4433.7,4.84,279.6,19.08,6
+Sub-Saharan Africa,2000,952.24,4.29,45.68,131.7,48
+Sub-Saharan Africa,2001,932.3,4.42,44.73,128.57,48
+Sub-Saharan Africa,2002,980.6,4.5,46.44,121.81,48
+Sub-Saharan Africa,2003,1172.22,4.74,60.03,116.79,48
+Sub-Saharan Africa,2004,1416.64,4.93,71.25,112.14,48
+Sub-Saharan Africa,2005,1645.26,4.93,76.68,106.73,48
+Sub-Saharan Africa,2006,1810.01,4.98,82.61,101.57,48
+Sub-Saharan Africa,2007,2030.81,4.91,90.76,97.16,48
+Sub-Saharan Africa,2008,2291.73,4.84,97.07,93.05,48
+Sub-Saharan Africa,2009,2027.93,5.13,96.97,96.3,48
+Sub-Saharan Africa,2010,2257.24,5.14,108.76,86.07,48
+Sub-Saharan Africa,2011,2576.24,5.08,119.64,85.78,48
+Sub-Saharan Africa,2012,2597.28,5.0,120.51,79.04,48
+Sub-Saharan Africa,2013,2675.3,5.21,122.04,75.79,48
+Sub-Saharan Africa,2014,2679.56,5.27,122.41,76.54,48
+Sub-Saharan Africa,2015,2262.73,5.28,110.98,74.22,48
+Sub-Saharan Africa,2016,2218.86,5.27,110.36,72.92,48
+Sub-Saharan Africa,2017,2429.33,5.48,114.63,72.76,48
+Sub-Saharan Africa,2018,2553.43,5.15,118.38,66.73,48
+Sub-Saharan Africa,2019,2516.03,5.3,118.29,67.18,48
+Sub-Saharan Africa,2020,2184.55,5.63,114.06,62.92,48
+Sub-Saharan Africa,2021,2460.53,5.54,126.16,62.98,48
+Sub-Saharan Africa,2022,2600.23,5.43,127.31,67.45,48
+Sub-Saharan Africa,2023,2602.66,5.52,130.11,58.4,48

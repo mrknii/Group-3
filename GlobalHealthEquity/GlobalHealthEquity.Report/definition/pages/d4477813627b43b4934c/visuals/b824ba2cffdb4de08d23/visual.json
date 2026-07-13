@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "b824ba2cffdb4de08d23",
+  "position": {
+    "x": 12,
+    "y": 472,
+    "z": 6,
+    "width": 186,
+    "height": 236
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "country_year_panel"
+                    }
+                  },
+                  "Property": "income_group"
+                }
+              },
+              "queryRef": "country_year_panel.income_group",
+              "nativeQueryRef": "income_group"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

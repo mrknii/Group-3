@@ -1,0 +1,181 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "65da86c6a58745a3a5ae",
+  "position": {
+    "x": 12,
+    "y": 88,
+    "z": 1,
+    "width": 1256,
+    "height": 620
+  },
+  "visual": {
+    "visualType": "scatterChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "country_latest"
+                    }
+                  },
+                  "Property": "country"
+                }
+              },
+              "queryRef": "country_latest.country",
+              "nativeQueryRef": "country"
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "country_latest"
+                    }
+                  },
+                  "Property": "region"
+                }
+              },
+              "queryRef": "country_latest.region",
+              "nativeQueryRef": "region"
+            }
+          ]
+        },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "country_latest"
+                    }
+                  },
+                  "Property": "GDP per Capita 2023"
+                }
+              },
+              "queryRef": "country_latest.GDP per Capita 2023",
+              "nativeQueryRef": "GDP per Capita 2023"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "country_latest"
+                    }
+                  },
+                  "Property": "Avg Mortality 2023"
+                }
+              },
+              "queryRef": "country_latest.Avg Mortality 2023",
+              "nativeQueryRef": "Avg Mortality 2023"
+            }
+          ]
+        },
+        "Size": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "country_latest"
+                    }
+                  },
+                  "Property": "Health Spend per Capita 2023"
+                }
+              },
+              "queryRef": "country_latest.Health Spend per Capita 2023",
+              "nativeQueryRef": "Health Spend per Capita 2023"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "axisScale": {
+              "expr": {
+                "Literal": {
+                  "Value": "'log'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "fad04e82ff284d4e96e9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "country_latest"
+              }
+            },
+            "Property": "latest_year"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "t",
+              "Entity": "country_latest",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "t"
+                          }
+                        },
+                        "Property": "latest_year"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "2023L"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+table income_year_summary
+	lineageTag: ccf4e042-60bc-406e-84a3-9657037d058c
+
+	column income_group
+		dataType: string
+		lineageTag: 06c77a0c-b878-4ce8-aa57-39bb84a2ec66
+		summarizeBy: none
+		sourceColumn: income_group
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 48cd8f50-089f-4b83-998e-d57018da268e
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column gdp_per_capita_usd
+		dataType: double
+		lineageTag: 2f4be23d-d102-48fe-88ef-39ed288ad1c8
+		summarizeBy: none
+		sourceColumn: gdp_per_capita_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column health_exp_pct_gdp
+		dataType: double
+		lineageTag: 2b8bf5f9-9a5c-49d6-9e14-50d2186ac4ad
+		summarizeBy: none
+		sourceColumn: health_exp_pct_gdp
+
+		annotation SummarizationSetBy = Automatic
+
+	column health_exp_per_capita_usd
+		dataType: double
+		lineageTag: 183c83e8-a357-409e-9719-5036e7c2030a
+		summarizeBy: none
+		sourceColumn: health_exp_per_capita_usd
+
+		annotation SummarizationSetBy = Automatic
+
+	column under5_mortality_per_1000
+		dataType: double
+		lineageTag: d4662fdb-da21-4b12-8153-78ccc49a4160
+		summarizeBy: none
+		sourceColumn: under5_mortality_per_1000
+
+		annotation SummarizationSetBy = Automatic
+
+	partition income_year_summary = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataPath & "\income_year_summary.csv"), [Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"income_group", type text}, {"year", Int64.Type}, {"gdp_per_capita_usd", type number}, {"health_exp_pct_gdp", type number}, {"health_exp_per_capita_usd", type number}, {"under5_mortality_per_1000", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table

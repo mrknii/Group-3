@@ -1,0 +1,91 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "5d313fc82a0e4a438d81",
+  "position": {
+    "x": 210,
+    "y": 120,
+    "z": 7,
+    "width": 1058,
+    "height": 300
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "country_year_panel"
+                    }
+                  },
+                  "Property": "year"
+                }
+              },
+              "queryRef": "country_year_panel.year",
+              "nativeQueryRef": "year"
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "country_year_panel"
+                    }
+                  },
+                  "Property": "income_group"
+                }
+              },
+              "queryRef": "country_year_panel.income_group",
+              "nativeQueryRef": "income_group"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "country_year_panel"
+                    }
+                  },
+                  "Property": "Avg Mortality"
+                }
+              },
+              "queryRef": "country_year_panel.Avg Mortality",
+              "nativeQueryRef": "Avg Mortality"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "country_year_panel"
+                  }
+                },
+                "Property": "year"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
